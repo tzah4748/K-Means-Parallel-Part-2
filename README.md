@@ -1,5 +1,5 @@
-**Parallel implementation of K-Means  
-Documentation**
+**Parallel implementation of K-Means Documentation**
+
 
 Final project**  
 **Course 10324, Parallel and Distributed Computation **  
