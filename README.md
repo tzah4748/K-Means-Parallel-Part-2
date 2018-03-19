@@ -3,9 +3,9 @@
 Documentation</h1>
 
 
-Final project**  
-**Course 10324, Parallel and Distributed Computation **  
-**2017 FALL Semester
+**Final project**  
+**Course 10324, Parallel and Distributed Computation**
+**2017 FALL Semester**
 
 ***Introduction:***
 
@@ -16,10 +16,11 @@ The assignment was to implement and parallelize the K-Means algorithm.
 My solution is based on the **“Simplified K-Means algorithm”** given to
 us in the assignment file.
 
-> ***Problem Definition:***
->
-> Given a set of points in **2**-dimensional space. Initial position
-> **(x<sub>i</sub>, y<sub>i</sub>)** and velocity **(v<sub>xi</sub>,
+***Problem Definition:***
+Given a set of points in **2**-dimensional space.
+
+Initial position
+**(x<sub>i</sub>, y<sub>i</sub>)** and velocity **(v<sub>xi</sub>,
 > v<sub>yi</sub>)** are known for each point
 > **P<sub>i</sub>**<sub>.</sub> Its position at the given time **t** can
 > be calculated as follows:
