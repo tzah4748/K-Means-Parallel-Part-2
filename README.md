@@ -6,13 +6,13 @@ Course 10324, Parallel and Distributed Computation</br>
 2017 FALL Semester</b></br></p>
 
 
-## ***Introduction:***  
+## ***Introduction:***
 This documentation is the final project assignment as part of “Parallel and Distributed Computation (10324)” course.  
 The assignment was to implement and parallelize the K-Means algorithm.  
 My solution is based on the **“Simplified K-Means algorithm”** given to us in the assignment file.
 
 
-***Problem Definition:***  
+## ***Problem Definition:***
 Given a set of points in **2**-dimensional space.  
 Initial position **(x<sub>i</sub>, y<sub>i</sub>)** and velocity **(v<sub>xi</sub>, v<sub>yi</sub>)** are known for each point **P<sub>i</sub>**<sub>.</sub> Its position at the given time **t** can be calculated as follows:  
 
@@ -23,7 +23,7 @@ y<sub>i</sub>(t) = y<sub>i</sub> + t\*v<sub>yi</sub>
 Implement simplified K-Means algorithm to find **K** clusters. Find a first occurrence during given time interval \[0, T\] when a system of **K** clusters has a Quality Measure **q** that is less than given value **QM**.
 
 
-***Simplified K-Means algorithm:***  
+## ***Simplified K-Means algorithm:***
 1.  Choose first **K** points as a cluster centers.
 2.  Group points around the given cluster centers - for each point
     define a center that is most close to the point.
@@ -40,7 +40,7 @@ Implement simplified K-Means algorithm to find **K** clusters. Find a first occu
 where d<sub>i</sub> is a diameter of cluster **i** and D<sub>ij</sub> is a distance between centers of cluster **i** and cluster **j**.
 
 
-***Input data and Output Result of the project:***  
+## ***Input data and Output Result of the project:***
 You will be supplied with the following data  
 -   **N** - number of points.
 -   **K** - number of clusters to find.
@@ -52,7 +52,7 @@ You will be supplied with the following data
 -   Coordinates and Velocities of all points.
 
 
-***Input File format***  
+## ***Input File format***
 The first line of the file contains **N K T dT LIMIT QM**.  
 Next lines are Initial Positions and Velocities of the points  
 *For example:*  
@@ -63,7 +63,7 @@ Next lines are Initial Positions and Velocities of the points
 45.23 20 -167.1 98
 
 
-***Output File format***  
+## ***Output File format***
 The output file contains information on the found clusters with the moment when the Quality Measure QM is reached for first time.  
 *For example:*  
 **First occurrence at t = 24.5 with q = 6.9**  
@@ -74,7 +74,7 @@ The output file contains information on the found clusters with the moment when 
 14.1 98  
 
 
-***How did I parallelize?***  
+## ***How did I parallelize?***
 The solution was parallelized with MPI, OpenMP and CUDA.  
 Parallelization Steps:  
 > (P – Number of Processes in MPI)  
@@ -94,7 +94,7 @@ Parallelization Steps:
     the clusters and the quality of clusters found.
 
 
-***Solution Rational:***
+## ***Solution Rational:***
 
 -   At first, when I solved the problem I tried to do as many actions as
     possible in the process’s cuda device, alas I found out that any
@@ -112,7 +112,7 @@ Parallelization Steps:
     with OpenMP.
 
 
-***Complexity:***  
+## ***Complexity:***
 The general case’s complexity for my solution is:  
 O (N \* K \* I \* (T/DT))  
 N – Number of points.  
@@ -121,7 +121,7 @@ I – Number of iterations in each delta time (DT) iteration.
 T/DT – Number of time iterations.
 
 
-***Project Prerequisites:***
+## ***Project Prerequisites:***
 
 -   MPI – MPICH2 Installed.  
     Notes: Make sure you include the MPI “lib” and “include” folders as
