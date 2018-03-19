@@ -114,7 +114,7 @@ Parallelization Steps:
 
 ## ***Complexity:***
 The general case’s complexity for my solution is:  
-O (N \* K \* I \* (T/DT))  
+O (N \* K \* I \* (T/dT))  
 N – Number of points.  
 K – Number of clusters to find.  
 I – Number of iterations in each delta time (DT) iteration.  
