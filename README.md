@@ -7,7 +7,7 @@ Documentation</h1>
 **Course 10324, Parallel and Distributed Computation**
 **2017 FALL Semester**
 
-***Introduction:***
+<h3>***Introduction:***</h3>
 
 This documentation is the final project assignment as part of “Parallel
 and Distributed Computation (10324)” course.
