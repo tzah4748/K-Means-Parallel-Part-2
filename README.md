@@ -56,7 +56,7 @@ You will be supplied with the following data
 The first line of the file contains **N K T dT LIMIT QM**.  
 Next lines are Initial Positions and Velocities of the points  
 *For example:*  
-5000 4 30 0.1 2000 7.3  
+>5000 4 30 0.1 2000 7.3  
 2.3 4. 5 6. 55 -2.3  
 76.2 -3.56 50.0 12  
 …  
@@ -66,8 +66,8 @@ Next lines are Initial Positions and Velocities of the points
 ## ***Output File format***
 The output file contains information on the found clusters with the moment when the Quality Measure QM is reached for first time.  
 *For example:*  
-**First occurrence at t = 24.5 with q = 6.9**  
-**Centers of the clusters:**  
+>First occurrence at t = 24.5 with q = 6.9  
+Centers of the clusters:  
 1.123 34  
 -5.3 17.01  
 33.56 -23  
