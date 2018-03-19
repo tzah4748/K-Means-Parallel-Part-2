@@ -6,7 +6,7 @@ Course 10324, Parallel and Distributed Computation</br>
 2017 FALL Semester</b></br></p>
 
 
-# ***Introduction:***  
+### ***Introduction:***  
 This documentation is the final project assignment as part of “Parallel and Distributed Computation (10324)” course.  
 The assignment was to implement and parallelize the K-Means algorithm.  
 My solution is based on the **“Simplified K-Means algorithm”** given to us in the assignment file.
