@@ -2,10 +2,10 @@
 
 Documentation</h1>
 
-
+<p align="center">
 **Final project**  
 **Course 10324, Parallel and Distributed Computation**  
-**2017 FALL Semester**
+**2017 FALL Semester**</p>
 
 
 ***Introduction:***  
