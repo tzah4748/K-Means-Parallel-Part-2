@@ -19,29 +19,21 @@ Given a set of points in **2**-dimensional space.
 Initial position **(x<sub>i</sub>, y<sub>i</sub>)** and velocity **(v<sub>xi</sub>, v<sub>yi</sub>)** are known for each point **P<sub>i</sub>**<sub>.</sub> Its position at the given time **t** can be calculated as follows:  
 
 
-> x<sub>i</sub>(t) = x<sub>i</sub> + t\*v<sub>xi</sub>
-
+> x<sub>i</sub>(t) = x<sub>i</sub> + t\*v<sub>xi</sub>  
 > y<sub>i</sub>(t) = y<sub>i</sub> + t\*v<sub>yi</sub>
 
 Implement simplified K-Means algorithm to find **K** clusters. Find a first occurrence during given time interval \[0, T\] when a system of **K** clusters has a Quality Measure **q** that is less than given value **QM**.
 
 
-***Simplified K-Means algorithm:***
-
-
+***Simplified K-Means algorithm:***  
 1.  Choose first **K** points as a cluster centers.
-
 2.  Group points around the given cluster centers - for each point
     define a center that is most close to the point.
-
 3.  Recalculate the cluster centers (average of all points in
     the cluster)
-
 4.  Check the termination condition – no points move to other clusters
     or maximum iteration LIMIT was made.
-
 5.  Repeat from 2 till the termination condition fulfills.
-
 6.  Evaluate the Quality of the clusters found. The Quality is equal to
     an average of diameters of the cluster divided by distance to
     other clusters. For example, in case of k = 3 the quality is equal
