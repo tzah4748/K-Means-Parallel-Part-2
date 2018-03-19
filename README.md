@@ -6,7 +6,7 @@ Course 10324, Parallel and Distributed Computation</br>
 2017 FALL Semester</b></br></p>
 
 
-***Introduction:***  
+***Introduction:*** 
 This documentation is the final project assignment as part of “Parallel and Distributed Computation (10324)” course.  
 The assignment was to implement and parallelize the K-Means algorithm.  
 My solution is based on the **“Simplified K-Means algorithm”** given to us in the assignment file.
@@ -51,65 +51,48 @@ You will be supplied with the following data
     calculate the clusters and the quality.
 -   Coordinates and Velocities of all points.
 
-> <span id="_Hlk509228352" class="anchor"></span>***Input File format***
 
-The first line of the file contains **N K T dT LIMIT QM**. Next lines
-are Initial Positions and Velocities of the points
-
-*For example:*
-
-5000 4 30 0.1 2000 7.3
-
-2.3 4. 5 6. 55 -2.3
-
-76.2 -3.56 50.0 12
-
-…
-
+***Input File format***  
+The first line of the file contains **N K T dT LIMIT QM**.  
+Next lines are Initial Positions and Velocities of the points  
+*For example:*  
+5000 4 30 0.1 2000 7.3  
+2.3 4. 5 6. 55 -2.3  
+76.2 -3.56 50.0 12  
+…  
 45.23 20 -167.1 98
 
-***Output File format***
 
-The output file contains information on the found clusters with the
-moment when the Quality Measure QM is reached for first time. For
-example:
+***Output File format***  
+The output file contains information on the found clusters with the moment when the Quality Measure QM is reached for first time.  
+*For example:*  
+**First occurrence at t = 24.5 with q = 6.9**  
+**Centers of the clusters:**  
+1.123 34  
+-5.3 17.01  
+33.56 -23  
+14.1 98  
 
-**First occurrence at t = 24.5 with q = 6.9**
 
-**Centers of the clusters:**
-
-1.123 34
-
--5.3 17.01
-
-33.56 -23
-
-14.1 98
-
-> ***How did I parallelize?***
->
-> The solution was parallelized with MPI, OpenMP and CUDA.  
-> Parallelization Steps:  
+***How did I parallelize?***  
+The solution was parallelized with MPI, OpenMP and CUDA.  
+Parallelization Steps:  
 > (P – Number of Processes in MPI)  
-> (N – Number of Points)
+(N – Number of Points)
 
 1.  First, each process gets his equal share of points.  
     Process 0 gets to deal with the remaining (N % P) points.
-
 2.  Each process uses his cuda device to define each point’s cluster
     based on their distances.
-
 3.  Each process uses OpenMP technology to add each point to its
     corresponding cluster.
-
 4.  Process 0 gets the gathered information about the points and
     clusters back from all P processes.
-
 5.  Process 0 send all the gathered points to his cuda device to update
     their current location in time.
-
 6.  Process 0 uses OpenMP technology to calculate both the diameters of
     the clusters and the quality of clusters found.
+
 
 ***Solution Rational:***
 
@@ -128,14 +111,15 @@ example:
 -   Large calculations that can take a bit of time were made
     with OpenMP.
 
-***Complexity:***
 
+***Complexity:***  
 The general case’s complexity for my solution is:  
 O (N \* K \* I \* (T/DT))  
 N – Number of points.  
 K – Number of clusters to find.  
 I – Number of iterations in each delta time (DT) iteration.  
 T/DT – Number of time iterations.
+
 
 ***Project Prerequisites: ***
 
