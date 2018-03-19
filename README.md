@@ -6,7 +6,7 @@ Course 10324, Parallel and Distributed Computation</br>
 2017 FALL Semester</b></br></p>
 
 
-***Introduction:*** 
+***Introduction:***  
 This documentation is the final project assignment as part of “Parallel and Distributed Computation (10324)” course.  
 The assignment was to implement and parallelize the K-Means algorithm.  
 My solution is based on the **“Simplified K-Means algorithm”** given to us in the assignment file.
@@ -121,7 +121,7 @@ I – Number of iterations in each delta time (DT) iteration.
 T/DT – Number of time iterations.
 
 
-***Project Prerequisites: ***
+***Project Prerequisites:***
 
 -   MPI – MPICH2 Installed.  
     Notes: Make sure you include the MPI “lib” and “include” folders as
