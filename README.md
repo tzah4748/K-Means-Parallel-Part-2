@@ -1,6 +1,4 @@
-<h1>Parallel implementation of K-Means
-
-Documentation</h1>
+<h1 align="center">Parallel implementation of K-Means</br>Documentation</h1>
 
 <p align="center">
     <b>Final project</br>
