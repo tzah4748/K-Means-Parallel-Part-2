@@ -3,33 +3,24 @@
 Documentation</h1>
 
 
-**Final project**
-
-**Course 10324, Parallel and Distributed Computation**
-
+**Final project**  
+**Course 10324, Parallel and Distributed Computation**  
 **2017 FALL Semester**
 
-***Introduction:***
 
-
-This documentation is the final project assignment as part of “Parallel and Distributed Computation (10324)” course.
-
-
+***Introduction:***  
+This documentation is the final project assignment as part of “Parallel and Distributed Computation (10324)” course.  
 The assignment was to implement and parallelize the K-Means algorithm.  
-
-
 My solution is based on the **“Simplified K-Means algorithm”** given to us in the assignment file.
 
 
-***Problem Definition:***
-
-
-Given a set of points in **2**-dimensional space.
-
-Initial position **(x<sub>i</sub>, y<sub>i</sub>)** and velocity **(v<sub>xi</sub>, v<sub>yi</sub>)** are known for each point **P<sub>i</sub>**<sub>.</sub> Its position at the given time **t** can be calculated as follows:
+***Problem Definition:***  
+Given a set of points in **2**-dimensional space.  
+Initial position **(x<sub>i</sub>, y<sub>i</sub>)** and velocity **(v<sub>xi</sub>, v<sub>yi</sub>)** are known for each point **P<sub>i</sub>**<sub>.</sub> Its position at the given time **t** can be calculated as follows:  
 
 
 > x<sub>i</sub>(t) = x<sub>i</sub> + t\*v<sub>xi</sub>
+
 > y<sub>i</sub>(t) = y<sub>i</sub> + t\*v<sub>yi</sub>
 
 Implement simplified K-Means algorithm to find **K** clusters. Find a first occurrence during given time interval \[0, T\] when a system of **K** clusters has a Quality Measure **q** that is less than given value **QM**.
