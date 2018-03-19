@@ -20,7 +20,7 @@ Initial position **(x<sub>i</sub>, y<sub>i</sub>)** and velocity **(v<sub>xi</su
 
 
 > x<sub>i</sub>(t) = x<sub>i</sub> + t\*v<sub>xi</sub>  
-> y<sub>i</sub>(t) = y<sub>i</sub> + t\*v<sub>yi</sub>
+y<sub>i</sub>(t) = y<sub>i</sub> + t\*v<sub>yi</sub>
 
 Implement simplified K-Means algorithm to find **K** clusters. Find a first occurrence during given time interval \[0, T\] when a system of **K** clusters has a Quality Measure **q** that is less than given value **QM**.
 
@@ -37,7 +37,7 @@ Implement simplified K-Means algorithm to find **K** clusters. Find a first occu
 6.  Evaluate the Quality of the clusters found. The Quality is equal to
     an average of diameters of the cluster divided by distance to
     other clusters. For example, in case of k = 3 the quality is equal:  
-> **q = (d<sub>1</sub>/D<sub>12</sub> + d<sub>1</sub>/D<sub>13</sub> + d<sub>2</sub>/D<sub>21</sub> + d<sub>2</sub>/D<sub>23</sub> + d<sub>3</sub>/D<sub>31</sub> + d<sub>3</sub>/D<sub>32</sub>) / 6**  
+> **q = (d<sub>1</sub>/D<sub>12</sub> + d<sub>1</sub>/D<sub>13</sub> + d<sub>2</sub>/D<sub>21</sub> + d<sub>2</sub>/D<sub>23</sub> + d<sub>3</sub>/D<sub>31</sub> + d<sub>3</sub>/D<sub>32</sub>) / 6**
 where d<sub>i</sub> is a diameter of cluster **i** and D<sub>ij</sub> is a distance between centers of cluster **i** and cluster **j**.
 
 
