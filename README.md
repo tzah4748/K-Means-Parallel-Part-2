@@ -3,7 +3,7 @@
 Documentation</h1>
 
 <p align="center">
-**Final project**  
+    <b>Final project</br>  
 **Course 10324, Parallel and Distributed Computation**  
 **2017 FALL Semester**</p>
 
