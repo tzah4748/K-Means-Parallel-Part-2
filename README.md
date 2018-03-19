@@ -1,4 +1,4 @@
-<h1>**Parallel implementation of K-Means Documentation**</h1>
+<h1>Parallel implementation of K-Means Documentation</h1>
 
 
 Final project**  
