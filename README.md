@@ -118,7 +118,7 @@ O (N \* K \* I \* (T/dT))
 N – Number of points.  
 K – Number of clusters to find.  
 I – Number of iterations in each delta time (DT) iteration.  
-T/DT – Number of time iterations.
+T/dT – Number of time iterations.
 
 
 ## ***Project Prerequisites:***
